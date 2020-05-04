@@ -1,5 +1,12 @@
 package com.devisupriyadi.devapp
 
+/* Tanggal Pengerjaan : 4 Mei 2020
+    Deksripsi         : Bikin Splash Screen
+    Nama              : Devi Tiana Octaviani
+    NIM               : 10117181
+    Kelas             : IF-5
+ */
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
