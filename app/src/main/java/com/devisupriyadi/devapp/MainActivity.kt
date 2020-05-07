@@ -1,5 +1,12 @@
 package com.devisupriyadi.devapp
 
+/* Tanggal Pengerjaan : 4-7 Mei 2020
+    Deksripsi         : Bikin Menu
+    Nama              : Devi Tiana Octaviani
+    NIM               : 10117181
+    Kelas             : IF-5
+ */
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -21,7 +28,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        toolbar = findViewById(R.id.tulbars)
         setSupportActionBar(tulbars)
 
         drawerLayout = findViewById(R.id.drawer)
