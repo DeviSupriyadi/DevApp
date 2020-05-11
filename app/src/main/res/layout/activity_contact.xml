@@ -33,12 +33,139 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dm64"
+        android:fontFamily="@font/annie_use_your_telescope"
         android:text="Contact Me"
-        android:textStyle="bold"
-        android:textSize="@dimen/dm36"
         android:textColor="@color/item"
+        android:textSize="@dimen/dm36"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact"
+        app:srcCompat="@drawable/facebook" />
+
+    <TextView
+        android:id="@+id/fb1"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm50"
+        android:fontFamily="@font/aclonica"
+        android:hint="Devi Tiana Octaviani Supriyadi"
+        android:textColorHint="@color/item"
+        android:textSize="@dimen/dm18"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fb"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fb"
+        app:srcCompat="@drawable/twitter" />
+
+    <TextView
+        android:id="@+id/twitter2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm56"
+        android:layout_marginEnd="@dimen/dm32"
+        android:fontFamily="@font/aclonica"
+        android:hint="DeviSupriyadi"
+        android:textColorHint="@color/item"
+        android:textSize="@dimen/dm20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/twitter"
+        app:layout_constraintTop_toBottomOf="@+id/fb1" />
+
+    <ImageView
+        android:id="@+id/ig"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twitter"
+        app:srcCompat="@drawable/instagram" />
+
+    <TextView
+        android:id="@+id/ig2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm56"
+        android:layout_marginEnd="@dimen/dm32"
+        android:fontFamily="@font/aclonica"
+        android:hint="devisupriyadi"
+        android:textColorHint="@color/item"
+        android:textStyle="bold"
+        android:textSize="@dimen/dm20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ig"
+        app:layout_constraintTop_toBottomOf="@+id/twitter2" />
+
+    <ImageView
+        android:id="@+id/telpon"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ig"
+        app:srcCompat="@drawable/telepon" />
+
+    <TextView
+        android:id="@+id/telpon2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm56"
+        android:layout_marginEnd="@dimen/dm32"
+        android:fontFamily="@font/aclonica"
+        android:textColor="@color/item"
+        android:textStyle="bold"
+        android:textSize="@dimen/dm20"
+        android:text="085974640533"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/telpon"
+        app:layout_constraintTop_toBottomOf="@+id/ig2" />
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telpon"
+        app:srcCompat="@drawable/gmail" />
+
+    <TextView
+        android:id="@+id/mail2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm56"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"
+        android:textSize="@dimen/dm18"
+        android:hint="devisupriyadi0310@gmail.com"
+        android:textColorHint="@color/item"
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/telpon2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
