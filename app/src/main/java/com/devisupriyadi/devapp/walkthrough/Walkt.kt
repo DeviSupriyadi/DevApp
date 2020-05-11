@@ -1,4 +1,4 @@
-package com.devisupriyadi.devapp
+package com.devisupriyadi.devapp.walkthrough
 
 /* Tanggal Pengerjaan : 7 Mei 2020
     Deksripsi         : Bikin Walkthrough
@@ -9,6 +9,7 @@ package com.devisupriyadi.devapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.devisupriyadi.devapp.R
 import kotlinx.android.synthetic.main.activity_walkt.*
 
 class Walkt : AppCompatActivity() {
@@ -17,6 +18,8 @@ class Walkt : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_walkt)
 
-        viewpager.adapter = MyPagerAdapter(supportFragmentManager)
+        viewpager.adapter = MyPagerAdapter(
+            supportFragmentManager
+        )
     }
 }

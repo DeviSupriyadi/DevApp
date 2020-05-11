@@ -1,8 +1,11 @@
-package com.devisupriyadi.devapp
+package com.devisupriyadi.devapp.walkthrough
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import com.devisupriyadi.devapp.walkthrough.frag1
+import com.devisupriyadi.devapp.walkthrough.frag2
+import com.devisupriyadi.devapp.walkthrough.frag3
 
 class MyPagerAdapter(fm: FragmentManager): FragmentPagerAdapter(fm) {
     private val pages = listOf(

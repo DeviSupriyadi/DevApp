@@ -11,6 +11,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.devisupriyadi.devapp.walkthrough.Walkt
 
 class SplashActivity : AppCompatActivity() {
 
@@ -20,7 +21,8 @@ class SplashActivity : AppCompatActivity() {
 
         val handle= Handler()
         handle.postDelayed({
-            val intent = Intent(this,Walkt::class.java)
+            val intent = Intent(this,
+                Walkt::class.java)
             startActivity(intent)
             finish()
         }, 3000)
