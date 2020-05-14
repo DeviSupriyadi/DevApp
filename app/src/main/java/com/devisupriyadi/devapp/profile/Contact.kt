@@ -1,7 +1,8 @@
-package com.devisupriyadi.devapp
+package com.devisupriyadi.devapp.profile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.devisupriyadi.devapp.R
 
 class Contact : AppCompatActivity() {
 
