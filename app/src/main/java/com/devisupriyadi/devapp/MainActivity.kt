@@ -48,11 +48,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when(item.itemId) {
             R.id.homee -> {startActivity(Intent(this,MainActivity::class.java))
             }
-            R.id.daily -> {startActivity(Intent(this,Profile::class.java))
+            R.id.daily -> {startActivity(Intent(this,Daily::class.java))
             }
-            R.id.gallery -> {startActivity(Intent(this,Profile::class.java))
+            R.id.gallery -> {startActivity(Intent(this,Gallery::class.java))
             }
-            R.id.music -> {startActivity(Intent(this,Contact::class.java))
+            R.id.music -> {startActivity(Intent(this,MusicVideo::class.java))
             }
             R.id.profile -> {startActivity(Intent(this,Profile::class.java))
             }

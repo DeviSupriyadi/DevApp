@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.rv_gallery.view.*
 
 class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
-    private var items: List<Gallery> = ArrayList()
+    private var gal: List<Gallery> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -16,11 +16,14 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return gal.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(items.get(position))
+        holder.bind(gal.get(position))
+    }
+    fun setGalleryAdapter(galleryEntitiy: List<Gallery>){
+        gal = galleryEntitiy
     }
 
     class ViewHolder constructor(

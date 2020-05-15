@@ -28,10 +28,10 @@ class DailyAdapter: RecyclerView.Adapter<DailyAdapter.viewHolder>() {
     class viewHolder constructor(
         view: View
     ): RecyclerView.ViewHolder(view){
-        val title = view.tvdaily
+        val judul = view.tvdaily
 
         fun bindaifren(dbdaily: dbdaily){
-            title.text = dbdaily.activityy
+            judul.text = dbdaily.activityy
         }
     }
 }

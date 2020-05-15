@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
         android:text="Daily Activity"
-        android:textColor="@color/putih"
+        android:textColor="@color/item"
         android:textSize="@dimen/dm24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

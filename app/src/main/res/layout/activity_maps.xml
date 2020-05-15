@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maps">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dm56"
+        android:layout_gravity="center"
+        android:background="@color/merah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backprofi"
+        android:layout_width="56dp"
+        android:layout_height="41dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="@dimen/dm10"
+        android:layout_marginTop="@dimen/dm10"
+        android:background="@color/merah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/mapsss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dm64"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="Find Me"
+        android:textColor="@color/item"
+        android:textSize="@dimen/dm36"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_homii"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/homiy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapsss" />
+
+    <TextView
+        android:id="@+id/homie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/item"
+        android:fontFamily="@font/annie_use_your_telescope"
+        android:text="Click Me to Find Me"
+        android:textSize="@dimen/dm50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_homii" />
+</androidx.constraintlayout.widget.ConstraintLayout>

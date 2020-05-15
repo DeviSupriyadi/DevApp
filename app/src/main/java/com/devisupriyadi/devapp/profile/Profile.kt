@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.devisupriyadi.devapp.MainActivity
+import com.devisupriyadi.devapp.Maps
 import com.devisupriyadi.devapp.R
 import kotlinx.android.synthetic.main.activity_profile.*
 
@@ -19,6 +20,10 @@ class Profile : AppCompatActivity() {
         }
         backmenu.setOnClickListener(){
             val intent=Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+        btn_map.setOnClickListener(){
+            val intent=Intent(this,Maps::class.java)
             startActivity(intent)
         }
     }
