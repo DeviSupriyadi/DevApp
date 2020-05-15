@@ -4,9 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.devisupriyadi.devapp.R
 import kotlinx.android.synthetic.main.rv_gallery.view.*
-import kotlinx.android.synthetic.main.rv_gallery_item.view.*
 
 class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
     private var items: List<Gallery> = ArrayList()
@@ -31,7 +29,7 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
         val image =view.foto1
 
         fun bind(gallery: Gallery){
-            image.setImageResource(Gallery.images)
+            image.setImageResource(gallery.images)
         }
     }
 }

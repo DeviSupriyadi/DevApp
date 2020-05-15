@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_marginLeft="@dimen/dm20"
-                android:background="@color/colorPrimary"
+                android:background="@color/merah"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/abc_vector_test"
@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".profile.Profile"
-        android:background="#34ace0">
+        android:background="@color/xabiru">
 
         <ImageView
             android:id="@+id/putuu"
