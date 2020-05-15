@@ -25,6 +25,9 @@
             android:id="@+id/profile"
             android:icon="@drawable/ic_profile"
             android:title="Profile"/>
+        <item
+            android:id="@+id/contactt"
+            android:title="Contact"/>
 
     </group>
 

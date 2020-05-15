@@ -15,10 +15,6 @@ class Profile : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        btn_con.setOnClickListener(){
-            var intent = Intent(Intent(this,Contact::class.java))
-            startActivity(intent)
-        }
         backmenu.setOnClickListener(){
             val intent=Intent(this,MainActivity::class.java)
             startActivity(intent)

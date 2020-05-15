@@ -12,9 +12,8 @@ class Contact : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contact)
-
         backprof.setOnClickListener(){
-            var intent = Intent(Intent(this,Profile::class.java))
+            var intent = Intent(Intent(this,MainActivity::class.java))
             startActivity(intent)
         }
         fb1.setOnClickListener(){

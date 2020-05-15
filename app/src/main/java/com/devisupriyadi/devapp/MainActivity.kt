@@ -55,6 +55,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.profile -> {startActivity(Intent(this,Profile::class.java))
             }
+            R.id.contactt -> {startActivity(Intent(this,Contact::class.java))
+            }
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
