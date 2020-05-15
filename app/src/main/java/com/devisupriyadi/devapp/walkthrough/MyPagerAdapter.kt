@@ -1,5 +1,9 @@
 package com.devisupriyadi.devapp.walkthrough
-
+/* Tanggal Pengerjaan : 4-16 Mei 2020
+    Nama              : Devi Tiana Octaviani
+    NIM               : 10117181
+    Kelas             : IF-5
+ */
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter

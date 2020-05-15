@@ -1,6 +1,6 @@
 package com.devisupriyadi.devapp
 
-/* Tanggal Pengerjaan : 4-7 Mei 2020
+/* Tanggal Pengerjaan : 4-16 Mei 2020
     Deksripsi         : Bikin Menu
     Nama              : Devi Tiana Octaviani
     NIM               : 10117181
