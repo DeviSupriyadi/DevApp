@@ -11,13 +11,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.TextView
-import android.widget.Toast
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.devisupriyadi.devapp.profile.Contact
 import com.devisupriyadi.devapp.profile.Profile
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_main.*
@@ -49,6 +46,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.homee -> {startActivity(Intent(this,MainActivity::class.java))
             }
             R.id.daily -> {startActivity(Intent(this,Daily::class.java))
+            }
+            R.id.fr3n -> {startActivity(Intent(this,Friends::class.java))
             }
             R.id.gallery -> {startActivity(Intent(this,Gallery::class.java))
             }

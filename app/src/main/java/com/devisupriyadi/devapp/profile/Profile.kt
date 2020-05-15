@@ -3,6 +3,7 @@ package com.devisupriyadi.devapp.profile
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.devisupriyadi.devapp.Contact
 import com.devisupriyadi.devapp.MainActivity
 import com.devisupriyadi.devapp.Maps
 import com.devisupriyadi.devapp.R
@@ -15,7 +16,7 @@ class Profile : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         btn_con.setOnClickListener(){
-            val intent=Intent(this,Contact::class.java)
+            var intent = Intent(Intent(this,Contact::class.java))
             startActivity(intent)
         }
         backmenu.setOnClickListener(){

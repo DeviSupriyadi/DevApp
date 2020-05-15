@@ -1,10 +1,10 @@
-package com.devisupriyadi.devapp.profile
+package com.devisupriyadi.devapp
 
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.devisupriyadi.devapp.R
+import com.devisupriyadi.devapp.profile.Profile
 import kotlinx.android.synthetic.main.activity_contact.*
 
 class Contact : AppCompatActivity() {
@@ -37,5 +37,6 @@ class Contact : AppCompatActivity() {
             var i = Intent(Intent.ACTION_VIEW, Uri.parse("https://mail.google.com/mail/u/1/#inbox?compose=CllgCJfrsgQldbszVnvxSrSZnjKcbwwpTDrjRJflcmTFSnvPqlnZhwWzXxvZlqnLLlnKSLbjtnV"))
             startActivity(i)
         }
+
     }
 }

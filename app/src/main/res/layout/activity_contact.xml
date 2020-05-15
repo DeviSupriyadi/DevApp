@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile.Contact">
+    tools:context=".Contact">
 
     <View
         android:id="@+id/view2"
@@ -29,7 +29,7 @@
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <TextView
-        android:id="@+id/contact"
+        android:id="@+id/contact2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dm64"
@@ -49,7 +49,7 @@
         android:layout_marginStart="@dimen/dm20"
         android:layout_marginTop="@dimen/dm36"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contact"
+        app:layout_constraintTop_toBottomOf="@+id/contact2"
         app:srcCompat="@drawable/facebook" />
 
     <TextView
@@ -64,10 +64,10 @@
         android:textSize="@dimen/dm18"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/fb"
-        app:layout_constraintTop_toBottomOf="@+id/contact" />
+        app:layout_constraintTop_toBottomOf="@+id/contact2" />
 
     <ImageView
-        android:id="@+id/twitter"
+        android:id="@+id/twitteer"
         android:layout_width="@dimen/dm50"
         android:layout_height="@dimen/dm50"
         android:layout_marginStart="@dimen/dm20"
@@ -89,7 +89,7 @@
         android:textSize="@dimen/dm20"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/twitter"
+        app:layout_constraintStart_toEndOf="@+id/twitteer"
         app:layout_constraintTop_toBottomOf="@+id/fb1" />
 
     <ImageView
@@ -99,7 +99,7 @@
         android:layout_marginStart="@dimen/dm20"
         android:layout_marginTop="@dimen/dm30"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/twitter"
+        app:layout_constraintTop_toBottomOf="@+id/twitteer"
         app:srcCompat="@drawable/instagram" />
 
     <TextView
@@ -119,7 +119,7 @@
         app:layout_constraintTop_toBottomOf="@+id/twitter2" />
 
     <ImageView
-        android:id="@+id/telpon"
+        android:id="@+id/telpoon"
         android:layout_width="@dimen/dm50"
         android:layout_height="@dimen/dm50"
         android:layout_marginStart="@dimen/dm20"
@@ -141,7 +141,7 @@
         android:textSize="@dimen/dm20"
         android:text="085974640533"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/telpon"
+        app:layout_constraintStart_toEndOf="@+id/telpoon"
         app:layout_constraintTop_toBottomOf="@+id/ig2" />
 
     <ImageView
@@ -151,7 +151,7 @@
         android:layout_marginStart="@dimen/dm20"
         android:layout_marginTop="@dimen/dm30"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telpon"
+        app:layout_constraintTop_toBottomOf="@+id/telpoon"
         app:srcCompat="@drawable/gmail" />
 
     <Button

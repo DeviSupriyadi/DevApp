@@ -46,8 +46,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclepren"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dm250"
+        android:layout_height="@dimen/dm250"
         android:textAlignment="center"
         android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"

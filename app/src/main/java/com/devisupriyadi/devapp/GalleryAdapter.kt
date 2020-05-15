@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.rv_gallery.view.*
 
 class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
-    private var gal: List<Gallery> = ArrayList()
+    private var gal: List<dbgallery> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -22,8 +22,8 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(gal.get(position))
     }
-    fun setGalleryAdapter(galleryEntitiy: List<Gallery>){
-        gal = galleryEntitiy
+    fun setGalleryAdapter(dbgallery:  List<dbgallery>){
+        gal = dbgallery
     }
 
     class ViewHolder constructor(
@@ -31,8 +31,8 @@ class GalleryAdapter:RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
     ): RecyclerView.ViewHolder(view){
         val image =view.foto1
 
-        fun bind(gallery: Gallery){
-            image.setImageResource(gallery.images)
+        fun bind(dbgallery: dbgallery){
+            image.setImageResource(dbgallery.images)
         }
     }
 }

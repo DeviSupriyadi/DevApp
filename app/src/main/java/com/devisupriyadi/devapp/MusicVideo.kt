@@ -21,9 +21,9 @@ class MusicVideo : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@MusicVideo)
             this.adapter = dbmsk
         }
-        betts= findViewById(R.id.backmenu5)
-        betts.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
+        backmenu5.setOnClickListener(){
+            var intent = Intent(Intent(this,MainActivity::class.java))
+            startActivity(intent)
         }
     }
 }

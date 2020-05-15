@@ -21,9 +21,10 @@ class Daily : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@Daily)
             this.adapter = dailyy
         }
-        betn = findViewById(R.id.backmenu2)
-        betn.setOnClickListener{
-            startActivity(Intent(this, MainActivity::class.java))
+
+        backmenu2.setOnClickListener(){
+            var intent = Intent(Intent(this,MainActivity::class.java))
+            startActivity(intent)
         }
     }
 }

@@ -21,9 +21,9 @@ class Friends : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@Friends,LinearLayoutManager.HORIZONTAL,false)
             this.adapter = frenss
         }
-        betn = findViewById(R.id.backmenu4)
-        betn.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
+        backmenu4.setOnClickListener(){
+            var intent = Intent(Intent(this,MainActivity::class.java))
+            startActivity(intent)
         }
     }
 }
