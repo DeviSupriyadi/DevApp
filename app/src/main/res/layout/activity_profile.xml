@@ -1,70 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".profile.Profile"
-    android:background="#0a3d62">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/putuu"
-        android:layout_width="@dimen/dm200"
-        android:layout_height="@dimen/dm200"
-        android:background="@drawable/deviii"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
-
-    <TextView
-        android:id="@+id/nama"
-        android:layout_width="match_parent"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dm32"
-        android:layout_marginTop="@dimen/dm36"
-        android:layout_marginEnd="@dimen/dm32"
-        android:gravity="center"
-        android:text="Holaaaa, kenalin gue Devi Supriyadi"
-        android:textColor="@color/putih"
-        android:textSize="@dimen/dm14"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/putuu" />
-
-    <TextView
-        android:id="@+id/namaa"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dm32"
-        android:layout_marginTop="@dimen/dm0"
-        android:layout_marginEnd="@dimen/dm32"
-        android:gravity="start"
-        android:text="Nama panjang gue Devi Tiana Octaviani Supriyadi. Umur gue 20 tahun. Gue lahir di Jakarta 3 Oktober 1999. Gue tinggal di Bandung. Gue punya alergi dingin sama debu. Status pacarnya Qibil The Changcuters kadang Baskara Putra tergantung mood aja."
-        android:textColor="@color/putih"
-        android:textSize="@dimen/dm14"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nama" />
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    <TextView
-        android:id="@+id/namaaa"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tulbars"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/merah"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageButton
+                android:id="@+id/backmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/dm20"
+                android:background="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/abc_vector_test"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textColor="@color/putih"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dm32"
-        android:layout_marginTop="@dimen/dm5"
-        android:layout_marginEnd="@dimen/dm32"
-        android:gravity="start"
-        android:text="Gue alumni dari MIN 16 Cipayung th 2012, SMP 45 Bandung th 2014, SMA 23 Bandung th 2017. Dan sedang menjalani pendidikan di Universitas Komputer Indonesia jurusan Teknik Informatika."
-        android:textColor="@color/putih"
-        android:textSize="@dimen/dm14"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/namaa" />
+        android:layout_height="match_parent"
+        tools:context=".profile.Profile"
+        android:background="#34ace0">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/putuu"
+            android:layout_width="@dimen/dm200"
+            android:layout_height="@dimen/dm200"
+            android:background="@drawable/deviii"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.141" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginTop="@dimen/dm25"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:text="Holaaaa, saya Devi Supriyadi"
+            android:textColor="@color/putih"
+            android:textSize="@dimen/dm14"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/putuu" />
+
+        <TextView
+            android:id="@+id/namaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginTop="@dimen/dm0"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="start"
+            android:text="Nama panjang saya Devi Tiana Octaviani Supriyadi. Saya lahir di Jakarta 3 Oktober 1999. Gue tinggal di Bandung. Gue punya alergi dingin sama debu. Moodyan person. I Love Qibil much"
+            android:textColor="@color/putih"
+            android:textSize="@dimen/dm14"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nama" />
+
+        <TextView
+            android:id="@+id/namaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginTop="@dimen/dm5"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="start"
+            android:text="Saya alumni MIN 16 Cipayung th'12, SMP 45 Bandung th'14, SMA 23 Bandung th'17. Sekarang sedang menjalani pendidikan di Universitas Komputer Indonesia jurusan Teknik Informatika."
+            android:textColor="@color/putih"
+            android:textSize="@dimen/dm14"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namaa" />
+
+        <Button
+            android:id="@+id/btn_con"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm40"
+            android:layout_marginStart="@dimen/dm50"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginLeft="@dimen/dm50"
+            android:layout_marginEnd="@dimen/dm50"
+            android:layout_marginRight="@dimen/dm50"
+            android:background="@drawable/btn_everything"
+            android:gravity="center"
+            android:text="Contact"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/namaaa"/>
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm40"
+            android:layout_marginStart="@dimen/dm50"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginLeft="@dimen/dm50"
+            android:layout_marginEnd="@dimen/dm50"
+            android:layout_marginRight="@dimen/dm50"
+            android:background="@drawable/btn_everything"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="Find Me"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btn_con"/>
+
+        <Button
+            android:id="@+id/btn_abt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm40"
+            android:layout_marginStart="@dimen/dm50"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginLeft="@dimen/dm50"
+            android:layout_marginEnd="@dimen/dm50"
+            android:layout_marginRight="@dimen/dm50"
+            android:background="@drawable/btn_everything"
+            android:gravity="center"
+            android:text="About"
+            android:textColor="@color/putih"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btn_map"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

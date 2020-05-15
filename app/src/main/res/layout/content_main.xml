@@ -14,7 +14,7 @@
             android:id="@+id/tulbars"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#b33939"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -24,21 +24,301 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Navigation Drawer"
                     android:textColor="@color/putih"
+                    android:text="Home"
                     style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-    
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context=".MainActivity">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm210"
+            android:background="#34ace0"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/fotoprorest"
+            android:layout_width="@dimen/dm100"
+            android:layout_height="@dimen/dm100"
+            android:layout_marginTop="@dimen/dm25"
+            android:src="@drawable/depi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/nampro"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is my content area."/>
-    </LinearLayout>
+            android:layout_marginTop="@dimen/dm25"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:textSize="@dimen/dm20"
+            android:text="Devi Supriyadi"
+            app:layout_constraintTop_toBottomOf="@+id/fotoprorest"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm18"
+            android:textStyle="bold"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Biasa dipanggil Devi, Depi. Suka The Changcuters"
+            app:layout_constraintTop_toBottomOf="@id/nampro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/hob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm20"
+            android:fontFamily="@font/aclonica"
+            android:text="Hobby"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/hobb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm0"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm16"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Berenang, Taekwondo, Dengerin Musik"
+            android:textStyle="bold"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/hob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/ris"
+            android:layout_below="@id/hobb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm3"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dm120"
+            android:layout_marginLeft="@dimen/dm120"
+            android:layout_marginTop="@dimen/dm10"
+            android:layout_marginEnd="@dimen/dm120"
+            android:layout_marginRight="@dimen/dm120"
+            android:background="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/hobb"/>
+
+        <TextView
+            android:id="@+id/makes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm20"
+            android:fontFamily="@font/aclonica"
+            android:text="Makes"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/ris"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/maksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm0"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm16"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Ramen, Seblak, Ayam Goreng, Ice Cream"
+            android:textStyle="bold"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/makes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/ris2"
+            android:layout_below="@id/maksi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm3"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dm120"
+            android:layout_marginLeft="@dimen/dm120"
+            android:layout_marginTop="@dimen/dm10"
+            android:layout_marginEnd="@dimen/dm120"
+            android:layout_marginRight="@dimen/dm120"
+            android:background="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/maksi"/>
+
+        <TextView
+            android:id="@+id/mikes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm20"
+            android:fontFamily="@font/aclonica"
+            android:text="Mikes"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/ris2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/miksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm0"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm16"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Air Mineral, Fruit Tea, Susu"
+            android:textStyle="bold"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/mikes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/ris3"
+            android:layout_below="@id/miksi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm3"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dm120"
+            android:layout_marginLeft="@dimen/dm120"
+            android:layout_marginTop="@dimen/dm10"
+            android:layout_marginEnd="@dimen/dm120"
+            android:layout_marginRight="@dimen/dm120"
+            android:background="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/miksi"/>
+
+        <TextView
+            android:id="@+id/inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm20"
+            android:fontFamily="@font/aclonica"
+            android:text="Interest"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/ris3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/rest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm0"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm16"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Laki-laki, Good Looking"
+            android:textStyle="bold"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/inter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/ris4"
+            android:layout_below="@id/rest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm3"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dm120"
+            android:layout_marginLeft="@dimen/dm120"
+            android:layout_marginTop="@dimen/dm10"
+            android:layout_marginEnd="@dimen/dm120"
+            android:layout_marginRight="@dimen/dm120"
+            android:background="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/rest"/>
+
+        <TextView
+            android:id="@+id/cita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm20"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm20"
+            android:fontFamily="@font/aclonica"
+            android:text="Cita-Cita"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/ris4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/cita2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dm0"
+            android:layout_marginStart="@dimen/dm32"
+            android:layout_marginEnd="@dimen/dm32"
+            android:gravity="center"
+            android:textSize="@dimen/dm16"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Dokter, Programmer"
+            android:textStyle="bold"
+            android:textColor="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/cita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:id="@+id/ris5"
+            android:layout_below="@id/cita2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm3"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dm120"
+            android:layout_marginLeft="@dimen/dm120"
+            android:layout_marginTop="@dimen/dm10"
+            android:layout_marginEnd="@dimen/dm120"
+            android:layout_marginRight="@dimen/dm120"
+            android:background="@color/item"
+            app:layout_constraintTop_toBottomOf="@id/cita2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

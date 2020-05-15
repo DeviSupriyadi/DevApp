@@ -22,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
         val handle= Handler()
         handle.postDelayed({
             val intent = Intent(this,
-                Walkt::class.java)
+                MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

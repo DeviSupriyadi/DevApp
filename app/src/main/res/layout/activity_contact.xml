@@ -11,19 +11,19 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dm56"
         android:layout_gravity="center"
-        android:background="@color/colorAccent"
+        android:background="#34ace0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/back"
+        android:id="@+id/backprof"
         android:layout_width="56dp"
         android:layout_height="41dp"
         android:layout_gravity="start"
         android:layout_marginStart="@dimen/dm10"
         android:layout_marginTop="@dimen/dm10"
-        android:background="@color/colorAccent"
+        android:background="#34ace0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view2"
         app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -154,18 +154,42 @@
         app:layout_constraintTop_toBottomOf="@+id/telpon"
         app:srcCompat="@drawable/gmail" />
 
-    <TextView
-        android:id="@+id/mail2"
+    <Button
+        android:id="@+id/btn_mail"
         android:layout_width="@dimen/dm0"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dm20"
-        android:layout_marginTop="@dimen/dm56"
+        android:layout_marginTop="@dimen/dm42"
         android:fontFamily="@font/aclonica"
         android:textStyle="bold"
         android:textSize="@dimen/dm18"
-        android:hint="devisupriyadi0310@gmail.com"
+        android:text="Send Mail"
         android:textColorHint="@color/item"
         app:layout_constraintStart_toEndOf="@+id/mail"
         app:layout_constraintTop_toBottomOf="@+id/telpon2" />
+
+    <ImageView
+        android:id="@+id/spoti"
+        android:layout_width="@dimen/dm50"
+        android:layout_height="@dimen/dm50"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        app:srcCompat="@drawable/spotify" />
+
+    <TextView
+        android:id="@+id/spoti2"
+        android:layout_width="@dimen/dm0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dm20"
+        android:layout_marginTop="@dimen/dm48"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold"
+        android:textSize="@dimen/dm18"
+        android:hint="Devi Tiana Octaviani Supriyadi"
+        android:textColorHint="@color/item"
+        app:layout_constraintStart_toEndOf="@+id/spoti"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mail" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
