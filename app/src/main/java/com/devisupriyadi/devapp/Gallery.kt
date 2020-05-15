@@ -26,7 +26,7 @@ class Gallery : AppCompatActivity() {
             this.adapter = galeri
         }
         backmenu3.setOnClickListener(){
-            var intent = Intent(Intent(this,Gallery::class.java))
+            var intent = Intent(Intent(this,MainActivity::class.java))
             startActivity(intent)
         }
     }
